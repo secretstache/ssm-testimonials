@@ -65,5 +65,10 @@ if ( is_admin() ) {
 
 require plugin_dir_path( __FILE__ ) . 'includes/plugin_update_check.php';
 
-
+$MyUpdateChecker = new PluginUpdateChecker_2_0 (
+    'https://kernl.us/api/v1/updates/57a155031d2583841187809d/',
+    __FILE__,
+    'ssm-testimonials',
+    1
+);
 // $MyUpdateChecker->purchaseCode = "somePurchaseCode";  <---- Optional!
