@@ -82,7 +82,7 @@ class SSM_Testimonials_Registrations {
 		$labels = array(
 			'name'                       => __( 'Testimonial Categories', 'ssm-testimonials' ),
 			'singular_name'              => __( 'Testimonial Category', 'ssm-testimonials' ),
-			'menu_name'                  => __( 'Testimonial Categories', 'ssm-testimonials' ),
+			'menu_name'                  => __( 'Categories', 'ssm-testimonials' ),
 			'edit_item'                  => __( 'Edit Testimonial Category', 'ssm-testimonials' ),
 			'update_item'                => __( 'Update Testimonial Category', 'ssm-testimonials' ),
 			'add_new_item'               => __( 'Add New Testimonial Category', 'ssm-testimonials' ),
