@@ -8,7 +8,7 @@
  * @wordpress-plugin
  * Plugin Name: SSM Testimonials
  * Plugin URI:  http://secretstache.com
- * Description: Enables a Vendor Custom Post Type.
+ * Description: Enables a Testimonial Custom Post Type.
  * Version:     0.1.2
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
