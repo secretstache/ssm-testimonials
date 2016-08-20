@@ -58,14 +58,18 @@ class SSM_Testimonials_Registrations {
 		);
 
 		$args = array(
-			'labels'          => $labels,
-			'supports'        => $supports,
-			'public'          => true,
-			'capability_type' => 'post',
-			'rewrite'         => array( 'slug' => 'testimonial', ), // Permalinks format
-			'menu_position'   => 30,
-			'menu_icon'       => 'dashicons-admin-page',
-			'has_archive'			=> FALSE,
+			'labels'          		=> $labels,
+			'supports'        		=> $supports,
+			'public'          		=> false,
+			'capability_type' 		=> 'page',
+			'publicly_queriable'	=> true,
+			'show_ui' 						=> true,
+			'show_in_nav_menus' 	=> false,
+			'rewrite'         		=> false,
+			'menu_position'   		=> 30,
+			'menu_icon'       		=> 'dashicons-admin-page',
+			'has_archive'					=> false,
+			'exclude_from_search'	=> true,
 		);
 
 		$args = apply_filters( 'ssm_testimonials_args', $args );
