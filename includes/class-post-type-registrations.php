@@ -67,7 +67,7 @@ class SSM_Testimonials_Registrations {
 			'show_in_nav_menus' 	=> false,
 			'rewrite'         		=> false,
 			'menu_position'   		=> 30,
-			'menu_icon'       		=> 'dashicons-admin-page',
+			'menu_icon'       		=> 'dashicons-format-quote',
 			'has_archive'					=> false,
 			'exclude_from_search'	=> true,
 		);
