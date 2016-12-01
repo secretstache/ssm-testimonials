@@ -9,7 +9,7 @@
  * Plugin Name: SSM Testimonials
  * Plugin URI:  http://secretstache.com
  * Description: Enables a Testimonial Custom Post Type.
- * Version:     0.1.4
+ * Version:     0.1.5
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
  * Text Domain: ssm-testimonials
@@ -26,7 +26,6 @@ if ( ! defined( 'WPINC' ) ) {
 // Required files for registering the post type and taxonomies.
 require plugin_dir_path( __FILE__ ) . 'includes/class-post-type.php';
 require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-registrations.php';
-require plugin_dir_path( __FILE__ ) . 'includes/class-post-type-metaboxes.php';
 
 // Instantiate registration class, so we can add it as a dependency to main plugin class.
 $post_type_registrations = new SSM_Testimonials_Registrations;
@@ -39,11 +38,6 @@ register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
 
 // Initialize registrations for post-activation requests.
 $post_type_registrations->init();
-
-// Initialize metaboxes
-// $post_type_metaboxes = new SSM_Testimonials_Metaboxes;
-// $post_type_metaboxes->init();
-
 
 /**
  * Adds styling to the dashboard for the post type and adds Project posts
