@@ -22,11 +22,11 @@ class SSM_Testimonials_Admin {
 	public function init() {
 
 		// Add thumbnail support for this post type
-		add_theme_support( 'post-thumbnails', array( $this->registration_handler->post_type ) );
+		// add_theme_support( 'post-thumbnails', array( $this->registration_handler->post_type ) );
 
 		// Add thumbnails to column view
-		add_filter( 'manage_edit-' . $this->registration_handler->post_type . '_columns', array( $this, 'add_image_column'), 10, 1 );
-		add_action( 'manage_' . $this->registration_handler->post_type . '_posts_custom_column', array( $this, 'display_image' ), 10, 1 );
+		// add_filter( 'manage_edit-' . $this->registration_handler->post_type . '_columns', array( $this, 'add_image_column'), 10, 1 );
+		// add_action( 'manage_' . $this->registration_handler->post_type . '_posts_custom_column', array( $this, 'display_image' ), 10, 1 );
 
 		// Allow filtering of posts by taxonomy in the admin view
 		add_action( 'restrict_manage_posts', array( $this, 'add_taxonomy_filters' ) );
@@ -46,10 +46,10 @@ class SSM_Testimonials_Admin {
 	 *
 	 * @return array Amended columns.
 	 */
-	public function add_image_column( $columns ) {
-		$column_thumbnail = array( 'thumbnail' => __( 'Image', 'ssm-testimonials' ) );
-		return array_slice( $columns, 0, 2, true ) + $column_thumbnail + array_slice( $columns, 1, null, true );
-	}
+	// public function add_image_column( $columns ) {
+	// 	$column_thumbnail = array( 'thumbnail' => __( 'Image', 'ssm-testimonials' ) );
+	// 	return array_slice( $columns, 0, 2, true ) + $column_thumbnail + array_slice( $columns, 1, null, true );
+	// }
 
 	/**
 	 * Custom column callback
@@ -58,16 +58,16 @@ class SSM_Testimonials_Admin {
 	 *
 	 * @param string $column Column ID.
 	 */
-	public function display_image( $column ) {
+	// public function display_image( $column ) {
 
-		// global $post;
-		switch ( $column ) {
-			case 'thumbnail':
-				// echo get_the_post_thumbnail( $post->ID, array(35, 35) );
-				echo get_the_post_thumbnail( get_the_ID(), array( 35, 35 ) );
-				break;
-		}
-	}
+	// 	// global $post;
+	// 	switch ( $column ) {
+	// 		case 'thumbnail':
+	// 			// echo get_the_post_thumbnail( $post->ID, array(35, 35) );
+	// 			echo get_the_post_thumbnail( get_the_ID(), array( 35, 35 ) );
+	// 			break;
+	// 	}
+	// }
 
 	/**
 	 * Add taxonomy filters to the post type list page.
