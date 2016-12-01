@@ -57,6 +57,18 @@ if ( is_admin() ) {
 
 }
 
+function ssm_faq_change_title_text( $title ){
+  $screen = get_current_screen();
+
+  if  ( 'testimonial' == $screen->post_type ) {
+    $title = 'Enter the citation';
+  }
+
+  return $title;
+}
+ 
+add_filter( 'enter_title_here', 'ssm_faq_change_title_text' );
+
 require plugin_dir_path( __FILE__ ) . 'includes/plugin_update_check.php';
 
 $MyUpdateChecker = new PluginUpdateChecker_2_0 (
