@@ -9,7 +9,7 @@
  * Plugin Name: SSM Testimonials
  * Plugin URI:  http://secretstache.com
  * Description: Enables a Testimonial Custom Post Type.
- * Version:     0.1.5
+ * Version:     0.1.6
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
  * Text Domain: ssm-testimonials
@@ -57,7 +57,7 @@ if ( is_admin() ) {
 
 }
 
-function ssm_faq_change_title_text( $title ){
+function ssm_testimonial_change_title_text( $title ){
   $screen = get_current_screen();
 
   if  ( 'testimonial' == $screen->post_type ) {
@@ -67,7 +67,7 @@ function ssm_faq_change_title_text( $title ){
   return $title;
 }
  
-add_filter( 'enter_title_here', 'ssm_faq_change_title_text' );
+add_filter( 'enter_title_here', 'ssm_testimonial_change_title_text' );
 
 require plugin_dir_path( __FILE__ ) . 'includes/plugin_update_check.php';
 
