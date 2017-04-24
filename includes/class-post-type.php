@@ -20,7 +20,7 @@ class SSM_Testimonials {
 	 *
 	 * @var string VERSION Plugin version.
 	 */
-	const VERSION = '0.1.6';
+	const VERSION = '0.1.7';
 
 	/**
 	 * Unique identifier for your plugin.

@@ -84,22 +84,22 @@ class SSM_Testimonials_Registrations {
 	 */
 	protected function register_taxonomy_category() {
 		$labels = array(
-			'name'                       => __( 'Testimonial Categories', 'ssm-testimonials' ),
-			'singular_name'              => __( 'Testimonial Category', 'ssm-testimonials' ),
+			'name'                       => __( 'Categories', 'ssm-testimonials' ),
+			'singular_name'              => __( 'Category', 'ssm-testimonials' ),
 			'menu_name'                  => __( 'Categories', 'ssm-testimonials' ),
-			'edit_item'                  => __( 'Edit Testimonial Category', 'ssm-testimonials' ),
-			'update_item'                => __( 'Update Testimonial Category', 'ssm-testimonials' ),
-			'add_new_item'               => __( 'Add New Testimonial Category', 'ssm-testimonials' ),
-			'new_item_name'              => __( 'New Testimonial Category Name', 'ssm-testimonials' ),
-			'parent_item'                => __( 'Parent Testimonial Category', 'ssm-testimonials' ),
-			'parent_item_colon'          => __( 'Parent Testimonial Category:', 'ssm-testimonials' ),
-			'all_items'                  => __( 'All Testimonial Categories', 'ssm-testimonials' ),
-			'search_items'               => __( 'Search Testimonial Categories', 'ssm-testimonials' ),
-			'popular_items'              => __( 'Popular Testimonial Categories', 'ssm-testimonials' ),
-			'separate_items_with_commas' => __( 'Separate testimonial categories with commas', 'ssm-testimonials' ),
-			'add_or_remove_items'        => __( 'Add or remove testimonial categories', 'ssm-testimonials' ),
-			'choose_from_most_used'      => __( 'Choose from the most used testimonial categories', 'ssm-testimonials' ),
-			'not_found'                  => __( 'No testimonial categories found.', 'ssm-testimonials' ),
+			'edit_item'                  => __( 'Edit Category', 'ssm-testimonials' ),
+			'update_item'                => __( 'Update Category', 'ssm-testimonials' ),
+			'add_new_item'               => __( 'Add New Category', 'ssm-testimonials' ),
+			'new_item_name'              => __( 'New Category Name', 'ssm-testimonials' ),
+			'parent_item'                => __( 'Parent Category', 'ssm-testimonials' ),
+			'parent_item_colon'          => __( 'Parent Category:', 'ssm-testimonials' ),
+			'all_items'                  => __( 'All Categories', 'ssm-testimonials' ),
+			'search_items'               => __( 'Search Categories', 'ssm-testimonials' ),
+			'popular_items'              => __( 'Popular Categories', 'ssm-testimonials' ),
+			'separate_items_with_commas' => __( 'Separate categories with commas', 'ssm-testimonials' ),
+			'add_or_remove_items'        => __( 'Add or remove categories', 'ssm-testimonials' ),
+			'choose_from_most_used'      => __( 'Choose from the most used categories', 'ssm-testimonials' ),
+			'not_found'                  => __( 'No categories found.', 'ssm-testimonials' ),
 		);
 
 		$args = array(

@@ -98,7 +98,7 @@ class SSM_Testimonials_Admin {
 	 */
 	protected function build_taxonomy_filter( $tax_slug ) {
 		$terms = get_terms( $tax_slug );
-		if ( 0 == count( $terms ) ) {
+		if ( 0 == count( $terms ) || is_wp_error($terms) ) {
 			return '';
 		}
 
@@ -144,7 +144,7 @@ class SSM_Testimonials_Admin {
 				'<option value="%s"%s />%s</option>',
 				esc_attr( $term->slug ),
 				selected( $current_tax_slug, $term->slug ),
-				esc_html( $term->name . '(' . $term->count . ')' )
+				esc_html( $term->name . ' (' . $term->count . ')' )
 			);
 		}
 		return $options;

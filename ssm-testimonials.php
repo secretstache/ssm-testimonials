@@ -9,7 +9,7 @@
  * Plugin Name: SSM Testimonials
  * Plugin URI:  http://secretstache.com
  * Description: Enables a Testimonial Custom Post Type.
- * Version:     0.1.6
+ * Version:     0.1.7
  * Author:      Secret Stache Media
  * Author URI:  http://secretstache.com
  * Text Domain: ssm-testimonials
